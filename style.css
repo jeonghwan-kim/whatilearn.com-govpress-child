@@ -1,0 +1,82 @@
+/*
+Theme Name: GovPress Child
+Theme URI: http://whatilearn.com
+Description: GovPress Child Theme
+Author: Jeonghwan Kim
+Author URI: http://whatilearn.com
+Template: govpress
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain: govpress-child
+*/
+
+
+.entry-title {
+    font-size: 200%;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.entry-title-list {
+    font-size: 125%;
+}
+.entry-meta-list {
+    border-bottom: none;
+    margin-bottom: 0px !important;
+    padding-bottom: 7px !important;
+}
+
+.widget-area aside.widget.widget_listcategorypostswidget a {
+    margin-left: 1.25em
+}
+.widget-area aside.widget.widget_listcategorypostswidget ul a {
+    margin-left: 0px;
+}
+.col-width {
+    max-width: 800px;
+}
+.hentry {
+    margin: 0 0 10px;
+}
+.entry-content h1 {
+    font-size: 200%;
+    border-bottom: 1px solid #f8f8f8;
+}
+.entry-content h2 {
+    font-size: 170%;
+    border-bottom: 1px solid #f8f8f8;
+}
+.entry-content h3 {
+    font-size: 140%;
+    border-bottom: 1px solid #f8f8f8;
+}
+.entry-content code {
+    background-color: #eee;
+    padding: 2px;
+    border-radius: 2px;
+}
+.entry-content pre {
+    padding: 1em;
+    border-radius: 2px;
+}
+.post-date {
+    margin-right: 10px;
+}
+.categories {
+    margin-right: 10px;
+}
+.categories ul.entry-meta-taxonomy {
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.tags li {
+    display: inline-block;
+    margin-right:5px;
+}
+.single-post-header {
+  margin-bottom: 25px;
+}
