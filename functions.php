@@ -37,13 +37,13 @@ if ( ! function_exists( 'govpress_category' ) ) :
 	function govpress_category () {
 	?>
 		<i class="fa fa-folder-o"></i>
-		<ul class="entry-meta-taxonomy">
-			<?php
-			$categories =  wp_get_post_categories( get_the_ID() );
-			$cat = get_category( $categories[0] );
+		<?php
+		$categories =  wp_get_post_categories( get_the_ID() );
+		foreach ( $categories as $category ) {
+			$cat = get_category( $category );
 			echo '<li class="category-link"><a href="' . get_category_link( $cat->cat_ID ) . '">' . $cat->name . '</a></li>';
-			?>
-		</ul>
+		}
+		?>
 	<?php
 	}
 endif;

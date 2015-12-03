@@ -64,15 +64,7 @@ Text Domain: govpress-child
 .post-date {
     margin-right: 10px;
 }
-.categories {
-    margin-right: 10px;
-}
-.categories ul.entry-meta-taxonomy {
-    display: inline-block;
-    list-style: none;
-    margin-left: 0;
-    margin-bottom: 0;
-}
+.categories li,
 .tags li {
     display: inline-block;
     margin-right:5px;
