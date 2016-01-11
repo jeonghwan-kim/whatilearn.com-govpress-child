@@ -109,3 +109,18 @@ function wpsites_home_page_limit( $query ) {
 }
 add_action( 'pre_get_posts', 'wpsites_home_page_limit' );
 ?>
+
+<?php
+function sanitize_filename_on_upload($filename) {
+	$ext = end(explode('.', $filename));
+
+	// Replace all weird characters
+	$sanitized = preg_replace('/[^a-zA-Z0-9-_.]/', '_', substr($filename, 0, -(strlen($ext)+1)));
+
+	// Replace dots inside filename
+	$sanitized = str_replace('.', '-', $sanitized);
+
+	return strtolower($sanitized . '.' . $ext);
+}
+add_filter('sanitize_file_name', 'sanitize_filename_on_upload', 10);
+?>
